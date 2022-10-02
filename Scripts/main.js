@@ -2,13 +2,17 @@ const App = {
     data() {
         return {
             title: `Not a counter`,
-            placeholderStr: `You can add here some text`,
-            notes: ['Заметка 1'],
+            placeholderStr: `Love so much`,
+            inputValue: '',
+            notes: [''],
         }
     },
     methods: {
         inputChangeHandler(e) {
             this.inputValue = e.target.value
+        },
+        addNewNote() {
+            this.notes.push('Катя, я тебя Люблю!')
         }
     }
 }
