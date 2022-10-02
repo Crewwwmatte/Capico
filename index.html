@@ -20,9 +20,13 @@
                             v-on:input="inputChangeHandler"
                         />
                     </div>
-<!--                    <h2>What you want to say: {{ inputValue }}</h2>-->
                     <button class="btn">Добавить</button>
-                    <hr>
+                    <hr/>
+                    <ul class="list">
+                        <li class="list-item">
+                            {{ notes }}
+                        </li>
+                    </ul>
                 </div>
             </div>
         </header>
