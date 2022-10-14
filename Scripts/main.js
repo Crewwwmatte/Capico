@@ -19,6 +19,7 @@ const App = {
 
 Vue.createApp(App).mount('#app')
 
+
 // const people = [
 //     {name: 'Владилен' , age: 25, budget: 40000},
 //     {name: 'Елена' , age: 17, budget: 3400},
