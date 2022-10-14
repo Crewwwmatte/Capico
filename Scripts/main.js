@@ -2,7 +2,7 @@ const App = {
     data() {
         return {
             title: `Not a counter`,
-            placeholderStr: `Love so much`,
+            placeholderStr: `Haha, classic`,
             inputValue: '',
             notes: [''],
         }
@@ -12,7 +12,7 @@ const App = {
             this.inputValue = e.target.value
         },
         addNewNote() {
-            this.notes.push('Катя, я тебя Люблю!')
+            this.notes.push('Yo, check this out')
         }
     }
 }
@@ -35,3 +35,24 @@ Vue.createApp(App).mount('#app')
 //     budget: 800000
 // }
 
+function numberJoy(n) {
+    let sum = 0
+
+    while (n > 0) {
+        sum += n % 10
+        n = Math.floor(n/10)
+    }
+    console.log(n)
+}
+
+function digit (number) {
+    let figures = "" + number
+    let sum = 0
+
+    for (var i = 0; i < figures.length; i++)
+        sum += +figures[i]
+
+    return sum
+}
+
+digit(255) // output => 2+5+5 = 12
